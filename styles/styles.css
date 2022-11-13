@@ -1,0 +1,66 @@
+/* Основний колір тексту #757575; */
+/* Додатковий колір тексту #212121; */
+/* Надписи білим кольором  #FFFFFF; */
+/* Колір акценту #2196F3; */
+
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --acent: #2196F3;  
+}
+
+.page {
+    background-color: #F5F5F5;
+    color: var(--primary-text-color);
+}
+
+.upper-line {
+    background-color: #FFFFFF;
+}
+.logo {
+    color: #000000;
+}
+.logo-web {
+   color: #2196F3;
+}
+.list {
+    list-style: none;
+}
+/* Site nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--acent);
+}
+
+.contacts a {
+    color: var(--primary-text-color);
+}
+.contacts a:hover, .contacts a:focus {
+    color: var(--acent);
+}
+
+/* Section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+/* Section cap */
+.section-cap {
+    background-color: #2F303A;
+}
+.section-cap .title {
+    color: #FFFFFF;
+}
+.section-cap .button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+/* Features */
+
+.features .title {
+    color: var(--title-text-color);
+}
