@@ -3,64 +3,118 @@
 /* Надписи білим кольором  #FFFFFF; */
 /* Колір акценту #2196F3; */
 
-
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --acent: #2196F3;  
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acent: #2196f3;
 }
 
 .page {
-    background-color: #F5F5F5;
-    color: var(--primary-text-color);
+  background-color: #f5f5f5;
+  color: var(--primary-text-color);
 }
 
 .upper-line {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .logo {
-    color: #000000;
+  color: #000000;
 }
 .logo-web {
-   color: #2196F3;
+  color: #2196f3;
 }
 .list {
-    list-style: none;
+  list-style: none;
 }
 /* Site nav */
 
 .site-nav .link {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
-.site-nav .link:hover, .site-nav .link:focus {
-    color: var(--acent);
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acent);
+}
+.site-nav .link.current {
+  color: var(--acent);
 }
 
 .contacts a {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
-.contacts a:hover, .contacts a:focus {
-    color: var(--acent);
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--acent);
 }
-
+/* Стилі для index.html*/
 /* Section */
 
 .section-title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 /* Section cap */
 .section-cap {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 .section-cap .title {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 .section-cap .button {
-    background-color: #2196F3;
-    color: #FFFFFF;
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.section-cap .button:hover,
+.section-cap .button:active {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* Features */
 
 .features .title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
+
+/* Our team */
+
+.page .section-team {
+  background-color: #f5f4fa;
+}
+.team h3 {
+  color: var(--title-text-color);
+}
+.team li {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.footer .logo {
+  color: #ffffff;
+}
+.footer-title a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address {
+  color: #ffffff;
+}
+
+/* Стилі для portfolio.html */
+/*.section-button  {
+  background: #f5f4fa;
+  color: #212121;
+}
+.section-button :hover,
+.section-button :active {
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}*/
