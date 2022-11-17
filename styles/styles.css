@@ -125,7 +125,6 @@
 }
 
 .features p {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
@@ -179,7 +178,6 @@
 .footer-title a {
   color: rgba(255, 255, 255, 0.6);
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
@@ -196,6 +194,12 @@
   background: #f5f4fa;
   color: #212121;
   border-style: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .section-button .btn:hover,
@@ -222,4 +226,15 @@
 }
 .project h3 {
   color: #212121;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2px;
+  letter-spacing: 0.06em;
+}
+
+.project p {
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.03em;
 }
