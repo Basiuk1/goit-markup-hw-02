@@ -17,7 +17,6 @@
 }
 
 .page {
-  background-color: var(--white-page);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -30,7 +29,6 @@
   color: var(--logo-black-color);
 
   font-family: Raleway, sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -64,6 +62,10 @@
 .contacts a {
   color: var(--primary-text-color);
 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 .contacts a:hover,
@@ -77,7 +79,6 @@
 .section-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -106,7 +107,6 @@
   border-radius: 4px;
   border-style: none;
 
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -119,16 +119,19 @@
 }
 /* Features */
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 .features-title .title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
-.features p {
+.features .feature {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -139,7 +142,6 @@
 .working-title {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -147,10 +149,17 @@
 
 /* Our team */
 
-.page .section-team {
-  background-color: var(--other-white);
+/*.section-team {
+  background-color: var(--white);
+}*/
+.team {
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.team h3 {
+
+.team-name {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -158,13 +167,7 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.team li {
-  background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  font-weight: 500;
+.team-position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -183,6 +186,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
 }
 .address {
   color: var(--white);
@@ -225,16 +229,15 @@
   background: var(--white);
   border: 1px solid var(--white-portfolio);
 }
-.project h3 {
+.project .project-name {
   color: var(--title-text-color);
 
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.project p {
+.project .project-type {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
